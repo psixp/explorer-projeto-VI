@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylestyle.css">
+    <link rel="stylesheet" href="style.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Staatliches&display=swap"
         rel="stylesheet">
@@ -16,8 +16,10 @@
 <body>
     <div class="page">
         <header>
-            <h1>Mentoria</h1>
-            <p>preencher o formulário abaixo para agendar a sua mentoria</p>
+            <div>
+                <h1>Mentoria</h1>
+                <p>preencher o formulário abaixo para agendar a sua mentoria</p>
+            </div>
         </header>
         <form action="#" method="post">
 
@@ -69,37 +71,39 @@
 
                 <div class="fieldset-wrapper">
                     <legend>Seus horários disponíveis</legend>
+                    <div>
+                        <h2 class="subtitles">Primeira mentoria</h2>
+                    </div>
                     <div class="col-3">
-                        <div class="input-wrapper">
-                            <h2>Primeira mentoria</h2>
+                        <div class="input-wrapper  data-wrapper">
                             <label for="first-mentory">Data <span>(DD/MM/AAAA)</span></label>
                             <input type="date" id="first-mentory">
                         </div>
 
-                        <div class="input-wrapper">
+                        <div class="input-wrapper  data-wrapper">
                             <label for="event-begin">Das</label>
                             <input type="time" id="event-begin" required>
                         </div>
 
-                        <div class="input-wrapper">
+                        <div class="input-wrapper  data-wrapper">
                             <label for="event-end">Ate</label>
                             <input type="time" id="event-end" required>
                         </div>
                     </div>
 
+                    <h2 class="subtitles">Segunda mentoria</h2>
                     <div class="col-3">
-                        <div class="input-wrapper">
-                            <h2>Segunda mentoria</h2>
+                        <div class="input-wrapper  data-wrapper">
                             <label for="second-mentory">Data <span>(DD/MM/AAAA)</span></label>
                             <input type="date" id="second-mentory">
                         </div>
 
-                        <div class="input-wrapper">
+                        <div class="input-wrapper  data-wrapper">
                             <label for="event-begin">Das</label>
                             <input type="time" id="event-begin" required>
                         </div>
 
-                        <div class="input-wrapper">
+                        <div class="input-wrapper  data-wrapper">
                             <label for="event-end">Ate</label>
                             <input type="time" id="event-end" required>
                         </div>
